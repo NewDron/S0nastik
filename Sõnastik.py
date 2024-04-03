@@ -9,13 +9,12 @@ def loe_failist(fail:str)->list:
     for rida in f:
         est_sõn.append(rida.strip())
     f.close()
-    return est_sõn
     f=open(fail,'r',encoding="utf-8")
     rus_sõn=[]
     for rida in f:
         rus_sõn.append(rida.strip())
     f.close()
-    return rus_sõn
+    return rus_sõn, est_sõn
 
 def sõna_lisamine(fail:str)->list:
     """
